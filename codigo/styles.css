@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(248, 236, 214);
+  color: #ff5400;
+}
+
+header {
+  background-color: #ff9f1c;
+  color: white;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background-color: rgb(248, 236, 214);
+  color: #ff5400;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.features,
+.about {
+  padding: 40px 20px;
+  background-color: rgb(248, 236, 214);
+}
+
+.features .container,
+.about .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features h2,
+.about h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ff5400;
+}
+
+.features .feature {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #ff9f1c;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.quadrados-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.quadrado-title {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.quadrado {
+  flex: auto;
+  padding: 3rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.icone {
+  font-size: 50px;
+}
+.azul-escuro {
+  display: flex;
+  flex-direction: column;
+  background-color: #ff9f1c;
+}
+
+.azul-claro {
+  display: flex;
+  flex-direction: column;
+  background-color: #ff6d00;
+}
+
+@media screen and (max-width: 768px) {
+  .quadrados-container {
+    display: block;
+  }
+}

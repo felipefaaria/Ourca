@@ -1,0 +1,50 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nome": "Felipe",
+      "login": "felipe",
+      "senha": "123"
+    },
+    {
+      "id": 2,
+      "nome": "Matheus",
+      "login": "matheus",
+      "senha": "123"
+    },
+    {
+      "id": 3,
+      "nome": "Jean",
+      "login": "jean",
+      "senha": "123"
+    }
+  ],
+  "tasks": [
+    {
+      "Nome": "Finalizar relatório",
+      "data": "2024-06-29",
+      "status": "Atrasada"
+    },
+    { "Nome": "Aula AEDS 2", "data": "2024-07-03", "status": "Concluida" },
+    { "Nome": "Aula TI02", "data": "2024-06-29", "status": "Atrasada" },
+    { "Nome": "Aula DEW", "data": "2024-07-03", "status": "Pendente" },
+    { "Nome": "Aula TI01", "data": "2024-06-30", "status": "Pendente" },
+    {
+      "Nome": "Finalizar relatório",
+      "data": "2024-06-28",
+      "status": "Pendente"
+    },
+    {
+      "Nome": "Reunião com o cliente",
+      "data": "2024-07-02",
+      "status": "Concluida"
+    },
+    { "Nome": "Revisar código", "data": "2024-06-29", "status": "Atrasada" },
+    { "Nome": "Enviar faturas", "data": "2024-06-27", "status": "Pendente" },
+    {
+      "Nome": "Planejamento do projeto",
+      "data": "2024-06-26",
+      "status": "Concluida"
+    }
+  ]
+}

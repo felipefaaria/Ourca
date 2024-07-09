@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Perfil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav
+      class="barra-navegacao navbar navbar-expand-lg"
+      style="background-color: orange; color: #fff"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="../Home/home.html"
+          style="color: #fff; margin-right: 2.2rem; margin-left: 0.75rem"
+          >Ourca</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            class="navbar-toggler-icon"
+            style="
+              background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox%3D%270 0 30 30%27 xmlns%3D%27http://www.w3.org/2000/svg%27%3E%3Cpath stroke%3D%27rgba(255,%20255,%20255,%201%29%27 stroke-width%3D%272%27 stroke-linecap%3D%27round%27 stroke-miterlimit%3D%2710%27 d%3D%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');
+            "
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Home/home.html"
+                style="color: #fff"
+                id="link0"
+                >Pagina Inicial</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Mensal/public/mensal.html"
+                style="color: #fff"
+                id="link1"
+                >Visualização Mensal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Contato/contato.html"
+                style="color: #fff"
+                id="link2"
+                >Contato</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff" id="link3"
+                >Perfil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Relogio/index.html"
+                style="color: #fff"
+                id="link4"
+                >Relogio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Gerenciar_sono/index.html" style="color: #fff" id="hrefsono"
+                >Gerenciar Sono</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a class="btn btn-outline-light" id="btnlogout" href="../index.html">
+            Logout
+          </a>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="profile-header">
+            <div class="profile-img">
+                <img src="https://avatars.githubusercontent.com/u/167527259?v=4" width="200" alt="">
+            </div>
+            <div class="profile-nav-info">
+                <h3 class="user-name">Jean Carlos</h3>
+                <div class="address">
+                    <p class="state">Minas Gerais</p>
+                    <span class="country">Brasil</span>
+                </div>
+            </div>
+            <!--
+            <div class="profile-option">
+                <div class="notification">
+                    <i class="fa fa-bell"></i>
+                    <span class="alert-message">1</span>
+                </div>
+            </div>
+            -->
+        </div>
+        
+        <div class="main-bd">
+            <div class="left-side">
+                <div class="profile-side">
+                    <p class="mobile-no">
+                        <i class="fa fa-phone"></i>
+                        +55 (31) 99470-6350
+                    </p>
+                    <p class="user-mail">
+                        <i class="fa fa-envelope"></i>
+                        jeanlopes166@gmail.com
+                    </p>
+                    <div class="user-bio">
+                        <h3>Bio</h3>
+                        <p class="bio">Sou um apaixonado estudante de Ciência da Computação e um entusiasta de tecnologia, desde os 10 anos venho estudando diversos temas sobre tecnologia. Desde que me lembro, sempre fui muito curioso sobre tudo e nunca poupei esforços para descobrir o porquê de algo ter acontecido, em 2014 foi a primeira vez que tive contato com a internet e quando me deparei com tudo isso fiquei maravilhado, mas ao mesmo tempo muito curioso para saber como tudo funciona, desde então venho sempre atualizando meus conhecimentos em tecnologia, o que me motivou muito a cursar graduação em Ciência da Computação na PUC MINAS - Unidade Coração Eucaristico.</p>
+                    </div>
+                    <div class="profile-btn">
+                        <!--
+                        <button class="chatbtn">
+                            <i class="fa fa-comment"></i> 
+                            Chat
+                        </button>
+                        -->
+                        <a href="../Mensal/public/mensal.html">
+                            <button class="createbtn">
+                                <i class="fa fa-plus"></i>
+                                Create
+                            </button>
+                        </a>
+                    </div>
+                    <div class="user-rating">
+                        <h3 class="rating">4.5</h3>
+                        <div class="rate">
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span class="no-user">
+                                <span>123 &nbsp;&nbsp;reviews</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="right-side">
+                <div class="nav">
+                    <ul>
+                        <li onclick="tabs(0)" class="user-post active">Suas Tarefas</li>
+                        <!--- <li onclick="tabs(1)" class="user-review">Reviews</li>
+                        <li onclick="tabs(2)" class="user-setting">Settings</li>
+                        -->
+                    </ul>
+                </div>
+                <div class="profile-body">
+                    <div class="profile-posts tab">
+                        <p><iframe src="../Mensal/public/mensal.html" width="700px" height="280px"></iframe></p>
+                    </div>
+                    <div class="profile-review tab">
+                        <h1>User Reviews</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed deserunt ut consequatur voluptates vero assumenda repellendus velit aperiam accusamus, porro, totam veritatis. Tempore, provident rerum? Aliquam eaque cupiditate natus minima?</p>
+                    </div>
+                    <div class="profile-setting tab">
+                        <h1>Account Settings</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quibusdam vitae reiciendis veniam dicta repellat eveniet deserunt totam culpa, eius veritatis commodi sed modi cum, vel labore illum adipisci quia!</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.titulo-principal {
+  font-size: 2rem;
+  font-weight: bold;
+  color: orange;
+  text-align: center;
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+.titulo-secundario {
+  font-size: 2rem;
+  font-weight: bold;
+  color: orange;
+  text-align: center;
+  margin-bottom: 30px; /* Espaçamento abaixo do título */
+}
+/* Estilização da Lista de Tarefas */
+.list-group {
+  margin-top: 20px; /* Espaçamento acima da lista */
+}
+.footer {
+  background-color: orange;
+  color: #fff;
+}
+
+.footer p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #ccc;
+}
+.navbar #btnlogout {
+  
+  margin-right: 0rem; /* Espaçamento entre o botão e os outros elementos */
+}
+
+@media (max-width: 768px) {
+  .navbar .btn-logout {
+    margin-left: 0; /* Ajuste para telas menores */
+    margin-top: 10px; /* Espaçamento superior em telas menores */
+  }
+}

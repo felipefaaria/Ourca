@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Relógio e Temporizador</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta charset="UTF-8">
+</head>
+<header>
+    <div class="navbar">
+        <div class="menu">
+            <div class="logo">
+            <a href="../Home/home.html">Ourca</a>
+            </div>
+            <div class="items">
+            <a href="../Home/home.html" id="link0">Pagina Inicial</a>
+            <a href="../Mensal/public/mensal.html" id="link1">Visualização Mensal</a>
+        
+            <a href="../Perfil/index.html" style="color: #fff" id="link3">Perfil</a>
+              
+            <a href="../Contato/contato.html" id="link2">Contato</a>
+            <a href="#" id="link4">Relogio</a>
+            <a href="#" id="hrefsono">Gerenciar Sono</a>
+            </div>
+        </div>
+        <button class="btn btn-outline-light logout">Logout</button>
+    </div>
+</header>
+
+<body>
+    <div class="container">
+        <div class="clock-container">
+            
+            <div id="digitalClock" class="digital-clock" style="display: auto;">
+                <div class="time">
+                    <span class="hours"></span> :
+                    <span class="minutes"></span> :
+                    <span class="seconds"></span>
+                </div>
+                <div class="date">
+                    <span class="day"></span> /
+                    <span class="month"></span> /
+                    <span class="year"></span>
+                </div>
+            </div>
+
+            <div id="analogClock" class="clock">
+
+                <!--Ponteiros-->
+                <div class="hand hour-hand"></div>
+                <div class="hand minute-hand"></div>
+                <div class="hand second-hand"></div>
+
+                <!--Numeros-->
+                <div class="number number1">1</div>
+                <div class="number number2">2</div>
+                <div class="number number3">3</div>
+                <div class="number number4">4</div>
+                <div class="number number5">5</div>
+                <div class="number number6">6</div>
+                <div class="number number7">7</div>
+                <div class="number number8">8</div>
+                <div class="number number9">9</div>
+                <div class="number number10">10</div>
+                <div class="number number11">11</div>
+                <div class="number number12">12</div>
+
+                <!--Riscos-->
+                <div class="mark mark1"></div>
+                <div class="mark mark2"></div>
+                <div class="mark mark3"></div>
+                <div class="mark mark4"></div>
+                <div class="mark mark5"></div>
+                <div class="mark mark6"></div>
+                <div class="mark mark7"></div>
+                <div class="mark mark8"></div>
+                <div class="mark mark9"></div>
+                <div class="mark mark10"></div>
+                <div class="mark mark11"></div>
+                <div class="mark mark12"></div>
+                <div class="mark mark13"></div>
+                <div class="mark mark14"></div>
+                <div class="mark mark15"></div>
+                <div class="mark mark16"></div>
+                <div class="mark mark17"></div>
+                <div class="mark mark18"></div>
+                <div class="mark mark19"></div>
+                <div class="mark mark20"></div>
+                <div class="mark mark21"></div>
+                <div class="mark mark22"></div>
+                <div class="mark mark23"></div>
+                <div class="mark mark24"></div>
+                <div class="mark mark25"></div>
+                <div class="mark mark26"></div>
+                <div class="mark mark27"></div>
+                <div class="mark mark28"></div>
+                <div class="mark mark29"></div>
+                <div class="mark mark30"></div>
+                <div class="mark mark31"></div>
+                <div class="mark mark32"></div>
+                <div class="mark mark33"></div>
+                <div class="mark mark34"></div>
+                <div class="mark mark35"></div>
+                <div class="mark mark36"></div>
+                <div class="mark mark37"></div>
+                <div class="mark mark38"></div>
+                <div class="mark mark39"></div>
+                <div class="mark mark40"></div>
+                <div class="mark mark41"></div>
+                <div class="mark mark42"></div>
+                <div class="mark mark43"></div>
+                <div class="mark mark44"></div>
+                <div class="mark mark45"></div>
+                <div class="mark mark46"></div>
+                <div class="mark mark47"></div>
+                <div class="mark mark48"></div>
+                <div class="mark mark49"></div>
+                <div class="mark mark50"></div>
+                <div class="mark mark51"></div>
+                <div class="mark mark52"></div>
+                <div class="mark mark53"></div>
+                <div class="mark mark54"></div>
+                <div class="mark mark55"></div>
+                <div class="mark mark56"></div>
+                <div class="mark mark57"></div>
+                <div class="mark mark58"></div>
+                <div class="mark mark59"></div>
+                <div class="mark mark60"></div>
+            </div>
+        </div>
+        <button id="toggleClock"><i class="fas fa-pencil-alt"></i></button>
+
+        <div class="timer-container">
+            <div id="timer" class="digital-clock" data-label="Temporizador">00:00:00</div>
+            <div class="timer-controls">
+                <input type="text" id="timer-input" placeholder="Insira o tempo no formato h:min:seg.miliseg" pattern="^([01]?\d|2[0-3]):[0-5]?\d:[0-5]?\d\.\d{1,3}$" title="Formato esperado: h:min:seg.miliseg (por exemplo, 1:23:45.678)" required>
+                <section class="grid-container">
+                    <div><button id="timer-start" class="grid-item">Iniciar</button></div>
+                    <div><button id="timer-resume" class="grid-item">Retomar</button></div>
+                    <div><button id="timer-stop" class="grid-item">Parar</button></div>
+                    <div><button id="timer-reset" class="grid-item">Resetar</button></div>
+                </section>
+            </div>
+        </div>
+
+        <div class = "stopwatch-container"> 
+            <div id="stopwatch" class="digital-clock" data-label="Cronômetro">00:00:00</div>
+            <div class="stopwatch-controls">
+                <section class="grid-container">
+                    <div><button id="stopwatch-start" class="grid-item">Iniciar</button></div>
+                    <div><button id="stopwatch-resume" class="grid-item">Retomar</button></div>
+                    <div><button id="stopwatch-stop" class="grid-item">Parar</button></div>
+                    <div><button id="stopwatch-reset" class="grid-item">Resetar</button></div>
+                </section>
+                <button id="stopwatch-lap">Registrar Volta</button>
+                <div id="laps"></div>
+        </div>
+            
+    </div>
+
+    
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('#timer-input').mask('00:00:00.000');
+    </script>
+</body>
+</html>

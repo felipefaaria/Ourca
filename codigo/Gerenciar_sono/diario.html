@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diário de Sono</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+  </head>
+  <body>
+    <nav
+      class="barra-navegacao navbar navbar-expand-lg"
+      style="background-color: orange; color: #fff"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="#"
+          style="color: #fff; margin-right: 2.2rem; margin-left: 0.75rem"
+          >Ourca</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            class="navbar-toggler-icon"
+            style="
+              background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox%3D%270 0 30 30%27 xmlns%3D%27http://www.w3.org/2000/svg%27%3E%3Cpath stroke%3D%27rgba(255,%20255,%20255,%201%29%27 stroke-width%3D%272%27 stroke-linecap%3D%27round%27 stroke-miterlimit%3D%2710%27 d%3D%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');
+            "
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Home/home.html"
+                style="color: #fff"
+                id="link0"
+                >Pagina Inicial</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Mensal/public/mensal.html"
+                style="color: #fff"
+                id="link1"
+                >Visualização Mensal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Perfil/index.html" style="color: #fff" id="link3"
+                >Perfil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Contato/contato.html"
+                style="color: #fff"
+                id="link2"
+                >Contato</a
+              >
+            </li>
+            
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Relogio/index.html"
+                style="color: #fff"
+                id="link4"
+                >Relogio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff" id="hrefsono"
+                >Gerenciar Sono</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a class="btn btn-outline-light" id="btnlogout" href="../index.html"
+            >Logout</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Diário de Sono</h1>
+      <button id="createNoteButton" class="btn btn-outline-warning">
+        Criar Anotação</button
+      ><br /><br />
+      <div id="noteSection" class="hidden text-center">
+        <textarea
+          id="noteContent"
+          rows="5"
+          cols="50"
+          placeholder="Escreva sua anotação aqui..."
+          class="form-control-lg"
+        ></textarea
+        ><br />
+        <button id="saveNoteButton" class="btn btn-outline-warning">
+          Salvar Anotação
+        </button>
+      </div>
+      <div id="notesList">
+        <h2>Minhas Anotações</h2>
+        <ul id="notesUl"></ul>
+      </div>
+      <br />
+
+      <a href="index3.html"
+        ><button class="btn btn-outline-warning">Voltar</button></a
+      >
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.js"></script>
+  </body>
+</html>

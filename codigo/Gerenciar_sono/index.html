@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotina de Sono</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+  </head>
+  <body>
+    <nav
+      class="barra-navegacao navbar navbar-expand-lg"
+      style="background-color: orange; color: #fff"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="#"
+          style="color: #fff; margin-right: 2.2rem; margin-left: 0.75rem"
+          >Ourca</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            class="navbar-toggler-icon"
+            style="
+              background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox%3D%270 0 30 30%27 xmlns%3D%27http://www.w3.org/2000/svg%27%3E%3Cpath stroke%3D%27rgba(255,%20255,%20255,%201%29%27 stroke-width%3D%272%27 stroke-linecap%3D%27round%27 stroke-miterlimit%3D%2710%27 d%3D%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');
+            "
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Home/home.html"
+                style="color: #fff"
+                id="link0"
+                >Pagina Inicial</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Mensal/public/mensal.html"
+                style="color: #fff"
+                id="link1"
+                >Visualização Mensal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Perfil/index.html" style="color: #fff" id="link3"
+                >Perfil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Contato/contato.html"
+                style="color: #fff"
+                id="link2"
+                >Contato</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Relogio/index.html"
+                style="color: #fff"
+                id="link4"
+                >Relogio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff" id="hrefsono"
+                >Gerenciar Sono</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a class="btn btn-outline-light" id="btnlogout" href="../index.html">
+            Logout
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Rotina de Sono</h1>
+      <form id="sleepForm">
+        <label for="dormir" class="horario"
+          >Qual horário você geralmente dorme?</label
+        >
+        <input type="time" id="dormir" name="dormir" /><br /><br />
+
+        <label for="acordar" class="horario"
+          >Qual horário você geralmente acorda?</label
+        >
+        <input type="time" id="acordar" name="acordar" /><br /><br />
+
+        <label
+          >Você segue essa rotina de sono durante quais dias da semana?</label
+        ><br />
+        <label class="custom-checkbox"
+          ><input type="checkbox" id="segunda" name="dias" /><span
+            class="checkmark"
+          ></span
+        ></label>
+        <label for="segunda" class="dias">Segunda</label><br />
+        <label class="custom-checkbox"
+          ><input type="checkbox" id="terca" name="dias" /><span
+            class="checkmark"
+          ></span
+        ></label>
+        <label for="terca" class="dias">Terça</label><br />
+        <label class="custom-checkbox"
+          ><input type="checkbox" id="quarta" name="dias" /><span
+            class="checkmark"
+          ></span
+        ></label>
+        <label for="quarta" class="dias">Quarta</label><br />
+        <label class="custom-checkbox"
+          ><input type="checkbox" id="quinta" name="dias" /><span
+            class="checkmark"
+          ></span
+        ></label>
+        <label for="quinta" class="dias">Quinta</label><br />
+        <label class="custom-checkbox"
+          ><input type="checkbox" id="sexta" name="dias" /><span
+            class="checkmark"
+          ></span
+        ></label>
+        <label for="sexta" class="dias">Sexta</label><br />
+        <label class="custom-checkbox"
+          ><input type="checkbox" id="sabado" name="dias" /><span
+            class="checkmark"
+          ></span
+        ></label>
+        <label for="sabado" class="dias">Sábado</label><br />
+        <label class="custom-checkbox"
+          ><input type="checkbox" id="domingo" name="dias" /><span
+            class="checkmark"
+          ></span
+        ></label>
+        <label for="domingo" class="dias">Domingo</label><br /><br />
+
+        <label>Você geralmente tem sono leve ou profundo?</label><br />
+        <label class="custom-radio"
+          >Leve
+          <input type="radio" id="leve" name="estado" value="leve" />
+          <span class="checkmark-radio"></span> </label
+        ><br />
+        <label class="custom-radio"
+          >Profundo
+          <input type="radio" id="profundo" name="estado" value="profundo" />
+          <span class="checkmark-radio"></span> </label
+        ><br /><br />
+
+        <label
+          >Você tem interrupções em sua noite de sono? Se sim quantas?</label
+        ><br />
+        <label class="custom-radio"
+          >Sim
+          <input
+            type="radio"
+            id="sim"
+            name="interrupcoes"
+            value="sim"
+            onclick="showInput('quantidade','tempo')"
+          />
+          <span class="checkmark-radio"></span>
+        </label>
+        <div class="addInfo">
+          <input
+            type="text"
+            id="quantidade"
+            name="quantidade"
+            placeholder="Quantas?"
+            class="hidden"
+          />
+        </div>
+        <br />
+        <label class="custom-radio"
+          >Não
+          <input
+            type="radio"
+            id="nao"
+            name="interrupcoes"
+            value="nao"
+            onclick="showInput()"
+          />
+          <span class="checkmark-radio"></span>
+        </label>
+        <br /><br />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

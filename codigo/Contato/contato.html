@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OurCa</title>
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="contato.css" />
+  </head>
+  <body>
+    <nav
+      class="barra-navegacao navbar navbar-expand-lg"
+      style="background-color: orange; color: #fff"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="../Home/home.html"
+          style="color: #fff; margin-right: 2.2rem; margin-left: 0.75rem"
+          >Ourca</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            class="navbar-toggler-icon"
+            style="
+              background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox%3D%270 0 30 30%27 xmlns%3D%27http://www.w3.org/2000/svg%27%3E%3Cpath stroke%3D%27rgba(255,%20255,%20255,%201%29%27 stroke-width%3D%272%27 stroke-linecap%3D%27round%27 stroke-miterlimit%3D%2710%27 d%3D%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');
+            "
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Home/home.html"
+                style="color: #fff"
+                id="link0"
+                >Pagina Inicial</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Mensal/public/mensal.html"
+                style="color: #fff"
+                id="link1"
+                >Visualização Mensal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Perfil/index.html" style="color: #fff" id="link3"
+                >Perfil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Contato/contato.html"
+                style="color: #fff"
+                id="link2"
+                >Contato</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Relogio/index.html"
+                style="color: #fff"
+                id="link4"
+                >Relogio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Gerenciar_sono/index.html" style="color: #fff" id="hrefsono"
+                >Gerenciar Sono</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a class="btn btn-outline-light" id="btnlogout" href="../index.html">
+            Logout
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5 main-container">
+      <div class="accordion-container">
+        <h2 class="title">Dúvidas Frequentes</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                ><h2 class="mb-0">
+                  Por onde começar a organização de rotinas?
+                </h2>
+                </button>
+          
+            </div>
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                Para planejar uma semana produtiva, defina seus principais
+                objetivos e estabeleça quando poderá considerá-la completa. Em
+                seguida, entenda os passos necessários para atingir esses
+                objetivos, mapeando as tarefas envolvidas. Avalie se essas
+                tarefas podem ser encaixadas na sua rotina ou se precisam de
+                prazos negociáveis. Priorize suas atividades: faça primeiro as
+                de alto impacto e baixo esforço, transforme as de alto impacto e
+                alto esforço em projetos com subtarefas, deixe as de baixo
+                impacto e baixo esforço por último e adie as de baixo impacto e
+                alto esforço para a próxima semana.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <h2 class="mb-0" style="color: orange">
+                  Qual a vantagem de manter uma agenda de rotinas?
+                </h2>
+              </button>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                O aumento significativo da produtividade. Com uma estrutura
+                clara, você pode gerenciar melhor o tempo e reduzir o estresse.
+                Além disso, permite acompanhar o progresso e garantir que
+                objetivos importantes sejam alcançados. A consistência na rotina
+                também contribui para a criação de hábitos positivos.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                ><h2 class="mb-0">
+                  Qual a diferença entre tarefas e lembretes?
+                </h2>
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                Tarefas são ações específicas que precisam ser concluídas,
+                geralmente com prazos e etapas definidas. Elas são
+                frequentemente parte de um plano maior e exigem um esforço
+                considerável para serem finalizadas. Lembretes, por outro lado,
+                são notificações simples que servem para lembrar de eventos ou
+                pequenas ações, como fazer uma ligação ou tomar um medicamento.
+                Enquanto tarefas demandam execução e gerenciamento, lembretes
+                focam em garantir que você não se esqueça de algo importante.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-container formulario">
+        <h2 class="title">Entre em contato com a nosso suporte:</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Digite seu nome"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Digite seu email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="3"
+              placeholder="Digite sua mensagem"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <footer class="footer mt-5 py-3">
+      <div class="container text-center">
+        <p>&copy; 2024 Ourca. Todos os direitos reservados.</p>
+        <p>Contato: ourca.rotines@gmail.com</p>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("Nvk1rbj-6_aHIEMFK");
+      })();
+
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const message = document.getElementById("message").value;
+
+          emailjs
+            .send("service_ourca", "ourca_email_template", {
+              name: name,
+              email: email,
+              message: message,
+            })
+            .then((response) => {
+              alert("Email enviado com sucesso!");
+            })
+            .catch((error) => {
+              alert("Erro ao enviar email:", error);
+            });
+
+          document.getElementById("contactForm").reset();
+        });
+    </script>
+  </body>
+</html>

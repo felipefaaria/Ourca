@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Inicial</title>
+    <link rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <nav
+      class="barra-navegacao navbar navbar-expand-lg"
+      style="background-color: orange; color: #fff"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="#"
+          style="color: #fff; margin-right: 2.2rem; margin-left: 0.75rem"
+          >Ourca</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            class="navbar-toggler-icon"
+            style="
+              background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox%3D%270 0 30 30%27 xmlns%3D%27http://www.w3.org/2000/svg%27%3E%3Cpath stroke%3D%27rgba(255,%20255,%20255,%201%29%27 stroke-width%3D%272%27 stroke-linecap%3D%27round%27 stroke-miterlimit%3D%2710%27 d%3D%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');
+            "
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./home.html"
+                style="color: #fff"
+                id="link0"
+                >Pagina Inicial</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Mensal/public/mensal.html"
+                style="color: #fff"
+                id="link1"
+                >Visualização Mensal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Perfil/index.html" style="color: #fff" id="link3"
+                >Perfil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Contato/contato.html"
+                style="color: #fff"
+                id="link2"
+                >Contato</a
+              >
+            </li>
+            
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../Relogio/index.html"
+                style="color: #fff"
+                id="link4"
+                >Relogio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff" id="hrefsono"
+                >Gerenciar Sono</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a class="btn btn-outline-light" id="btnlogout" href="../index.html"
+            >Logout</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Coluna Esquerda -->
+        <div class="col-md-6">
+          <h1 class="titulo-principal">Seja bem-vindo ao Ourca</h1>
+
+          <h2 class="titulo-secundario">Aqui estão suas tarefas do dia:</h2>
+          <ul id="lista" class="list-group mb-3"></ul>
+        </div>
+        <!-- Coluna Direita -->
+        <div class="col-md-6">
+          <div class="row">
+            <div
+              class="col-md-12 d-flex align-items-center justify-content-center"
+              style="height: 250px"
+            >
+              <canvas id="myChart" width="100" height="80"></canvas>
+            </div>
+            <div
+              class="col-md-12 d-flex align-items-center justify-content-center"
+              style="height: 250px"
+            >
+              <canvas id="myPieChart" width="100" height="100"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer mt-5 py-3">
+      <div class="container text-center">
+        <p>&copy; 2024 Ourca. Todos os direitos reservados.</p>
+        <p>Contato: ourca.rotines@gmail.com</p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="home.js"></script>
+  </body>
+</html>
